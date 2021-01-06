@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    background-color: #150118;
 }
 
 *,
@@ -30,6 +31,7 @@ h3,
 h4 {
 
     font-family: 'PT Sans', sans-serif;
+    color: #fefffd;
 }
 
 h1 {
@@ -83,13 +85,15 @@ img {
 
 }
 
-.site-header {
-
-    background-image: url(../img/banner14.jpg);
+.site-header { 
+   
+    background: linear-gradient(to right, hsla(305, 76%, 11%, 0.24), hsla(317, 45%, 52%, 0.664)), url(../img/banner14.jpg);
+    background-image: linear-gradient(to right, rgba(54, 8, 56, 0.39), rgba(188, 78, 156, 0.663)), url(../img/banner14.jpg);
+   
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 60rem;
+    height: 50rem;
 
 }
 
@@ -110,6 +114,10 @@ img {
 
     font-weight: 700;
 
+
+}
+p {
+    color: #ffffff;
 }
 
 .navegacion a {
@@ -208,6 +216,7 @@ img {
     .entrada-blog .contenido-blog {
 
         flex: 0 0 calc(60% - 2rem);
+        padding-bottom: 3rem;
 
     }
 }
@@ -251,27 +260,42 @@ img {
 
 /**botones**/
 .btn {
-    display: block;
+  
+    border: 0;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 2px #fff;
+    
+    cursor: pointer;
+    display: inline-block;
+    font-size: .8em;
+    font-weight: 600;
+    height: 3.5em;
+    letter-spacing: .25em;
+    line-height: 3.5em;
+    padding: 0 1.75em;
     text-align: center;
-    padding: 1rem 3rem;
-    margin-top: 2rem;
-    color: #ffffff;
     text-decoration: none;
-    font-family: 'PT Sans'sans-serif;
-    font-weight: 700;
     text-transform: uppercase;
-    font-size: 2rem;
-
+    /* white-space: nowrap; */
 }
 
-.btn-primario {
 
-    background-color: #000000;
+.btn-primario { 
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
-
+.btn-primario:hover {
+box-shadow: inset 0 0 0 2px #9bf1ff;
+color: #000000;
+background-color: #7ddffd;
+}
 .btn-secundario {
     background-color: #784d3c;
+    color: rgb(255, 255, 255);
 }
+.btn-secundario:hover {
+    box-shadow: inset 0 0 0 2px #9bf1ff;
+    color: #f1ebeb;  }
 
 @media (min-width:400px) {
 
@@ -286,7 +310,7 @@ img {
     }
 
     .entrada-blog {
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
         border-bottom: 1px solid #e1e1e1;
     }
 }
