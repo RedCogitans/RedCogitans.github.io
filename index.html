@@ -30,13 +30,31 @@
                     </h1>
                 </a>
 <div class="action">
-                <nav class="navegaciones">
-                    <a href="nosotros.html"class="btc btn-header"><h6>Nosotros</h6></a>
-                    <a href="Nuestro_Blog.html" class="btc btn-header" ><h6>Nuestro Blog</h6></a>
-                    <a href="contacto.html" class="btc btn-header" ><h6>contáctanos</h6></a> 
-                    
-                </nav>
+    <div class="topnav" id="myTopnav">
+
+<a href="#news"  class="">Inicio</a>
+<a href="#contact" class="">Sobre Nosotros</a>
+<a href="#about" class="">Contácto</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</a>
 </div>
+
+</div>
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
+
 
             </div>
             <!--CIERRRA BARRA-->

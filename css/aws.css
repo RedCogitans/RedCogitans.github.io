@@ -4635,8 +4635,7 @@ input[type=submit]:disabled {
     display: flex;
     background-color: #2a2f4a;
     box-shadow: 0 0 .25em 0 rgba(0, 0, 0, .15);
-    cursor: default;
-    font-weight: 600;
+    cursor: default; 
     height: 3.25em;
     left: 0;
     letter-spacing: .25em;
