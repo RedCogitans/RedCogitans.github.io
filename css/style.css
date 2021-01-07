@@ -400,7 +400,7 @@ background-color: #ffffff;
 
     .entrada-blog {
         margin-bottom: 5rem;
-        border-bottom: 1px solid #e1e1e1;
+        border-bottom: 0px solid #e1e1e1;
     }
 }
 
