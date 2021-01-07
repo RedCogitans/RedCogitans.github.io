@@ -3299,7 +3299,7 @@ a {
 
 a:hover {
     border-bottom-color: transparent;
-    color: #9bf1ff !important
+    color: #000c0e !important
 }
 
 a:active {
@@ -3371,7 +3371,9 @@ h6 {
     h1 {
         font-size: 2em
     }
-
+    .cursos{
+    padding-top: 33px;
+    }
     h2 {
         font-size: 1.5em
     }
@@ -4278,7 +4280,7 @@ button.special,
 input[type=button].special,
 input[type=reset].special,
 input[type=submit].special {
-    background-color: #fff;
+    background-color: rgb(29, 224, 231);
     box-shadow: none;
     color: #242943
 }
